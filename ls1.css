@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html-css */
+body{
+    background-image: url("media/bgpic-pc.svg");
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    color: darkblue;
+}
+
+p{
+    font-size: 16px;
+    color: red;
+}
+
+button{
+    padding: 12px;
+    margin: 12px 0 12px 0;
+    font-weight: 900;
+    font-size: 18px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    color: darkblue;
+    transition: all 0.2s;
+}
+
+/*Inside a container body of frames */
+
+.container{
+    margin: 100px auto 15px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container{
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    text-align: center;
+    width: 450px;
+
+}
+
+.text{
+    margin: auto 90px auto 90px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    line-height: 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text p{
+    margin-top: -20px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    background-color: palevioletred;
+    margin: 24px;
+    padding: auto;
+    border-radius: 16px;
+}
+
+.music{
+    margin-left: 20px;
+}
+
+.price-container{
+    margin: 10px 90px 20px 20px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 5px;
+}
+
+.change{
+    margin: 20px;
+    text-decoration: underline;
+    color: hsl(240,75%,52%);
+    font-weight: 700;
+}
+
+.change:hover{
+    color: darkblue;
+    transition: all 0.2s;
+}
+
+.cancel{
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.cancel:hover{
+    color: darkblue;
+    transition: all 0.2s;
+}
+
+/* Maintaining the size of webpage accordingly to different devices */
+
+@media only screen and (min-width: 1440px){
+    body{
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 375px){
+    .card-container{
+        width: 90%;
+        margin: 1rem;
+        margin-top: 2rem;
+    }
+
+    .card-container{
+        padding: 1rem;
+    }
+}
